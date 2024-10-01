@@ -1,0 +1,123 @@
+.conntainer {
+  max-width: 1300px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+
+nav.aktiv {
+  opacity: calc(red);
+}
+.btn {
+  border-color: #0d00ff;
+  color: rgb(15, 17, 19);
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  justify-content: space-between;
+}
+li {
+  list-style-type: none;
+}
+
+.dropdaun {
+  position: relative;
+  transition: all 5s;
+}
+
+.dropdown-content {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  transition: all 1s;
+  min-width: 1 00px;
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.dropdaun:hover .dropdown-content {
+  display: block;
+}
+ul .btn:hover:active {
+  background-color: aqua;
+  background-color: rgb(31, 158, 193);
+  color: #000;
+}
+ul .btn:hover {
+  border-color: #0d00ff;
+  opacity: 50%;
+}
+.welkom {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+}
+.sekntri {
+  max-width: 600px;
+}
+.sekntri .btni:hover {
+  border-color: #6a65bd;
+  border-color: #5d57ce;
+  opacity: 50%;
+}
+.btni {
+  background-color: #003cff;
+  border-radius: 8px;
+  height: 30px;
+  color: aliceblue;
+}
+.madya {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  text-align: center;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ikon{
+    display: none;
+    width: 20px;
+
+}
+.card {
+  max-width: 320px;
+  height: 300px;
+}
+.card-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 980px){
+    .welkom{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+}
+@media (max-width: 768px) {
+    ul{
+        display: none;
+    }
+    .ikon{
+        display: flex;
+    }
+
+}
